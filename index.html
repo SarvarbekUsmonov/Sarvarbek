@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <audio id="myAudio" controls>
+  <audio id="myAudio" controls style="display: none;">
   <source src="./rickRoll.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
@@ -68,23 +68,12 @@
     <p class="copyright">© 2022 Sarvarbek Usmonov.</p>
   </div>
 
+
 <script>
-  const audio = document.getElementById("myAudio");
+    const audio = document.getElementById("myAudio");
+    window.onload = function() {
   audio.play();
-  
-  const audioAuto = document.getElementById("myAudioAuto");
-  audioAuto.play();
-</script>
-  
-<script>
-//     const audio = document.getElementById("myAudio");
-//     window.addEventListener("load", function() {
-//   audio.play();
-// });
-  
-// window.onload = function() {
-//     document.getElementById("myAudioAuto").play();
-// }
+}
 
     </script>
 </body>
