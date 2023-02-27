@@ -18,7 +18,7 @@
 
 <body>
   <audio id="myAudio">
-  <source src="rickRoll.mp3" type="audio/mpeg">
+  <source src="./rickRoll.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
@@ -69,13 +69,12 @@
 
 
 <script>
-      window.onload = function() {
-        const audio = new Audio("rickRoll.mp3");
-        audio.play();
-      };
-    const audio = document.getElementById("myAudio");
-    window.onload = function() {
+      const audio = document.getElementById("myAudio");
+
+document.body.addEventListener("mouseover", function() {
   audio.play();
+});
+
 };
     </script>
 </body>
