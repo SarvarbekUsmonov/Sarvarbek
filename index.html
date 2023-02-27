@@ -70,10 +70,16 @@
 
 
 <script>
+  let playing = false;
     const audio = document.getElementById("myAudio");
     document.body.onclick = function() {
-  audio.play();
+      if(!playing){audio.play(); playing=true;}
 }
+   document.body.onclick = function() {
+     if(!playing){audio.play(); playing=true;}
+
+}
+  
 
     </script>
 </body>
