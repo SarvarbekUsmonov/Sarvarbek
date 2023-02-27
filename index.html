@@ -71,11 +71,16 @@
 
 <script>
   let playing = false;
-    const audio = document.getElementById("myAudio");
-    document.body.onclick = function() {
-      if(!playing){audio.play(); playing=true;}
+const audio = document.getElementById("myAudio");
+document.body.onclick = function() {
+  if (!playing) {
+    audio.play();
+    playing = true;
+    setTimeout(function() {
       alert("Haha, you got Rick Rolled 😁");
-}
+    }, 1000);
+  }
+};
 //    document.body.onmouseover = function() {
 //      if(!playing){audio.play(); playing=true;}
 
