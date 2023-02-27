@@ -78,7 +78,10 @@ document.body.onclick = function() {
     playing = true;
     setTimeout(function() {
       alert("Haha, you got Rick Rolled 😁");
-    }, 1000);
+    }, 3000);
+    
+    setTimeout(function() {audio.pause();
+}, 100000);
   }
 };
 //    document.body.onmouseover = function() {
